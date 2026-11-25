@@ -1,6 +1,6 @@
 # OpenDrift drift hindcast for New Zealand SAR on free forcing data: final report
 
-Spike folder: `drift-hindcast-spike`. Tables in this report are generated from the CSV files in `results/` by `scripts/s11_build_report.py` (kilometre values as in the CSV files, up to 5 significant digits; fractions shown as percent). Figures are in `figures/`. OpenDrift 1.14.12. This spike builds nothing for production. It produces evidence for a go / no-go decision.
+Study folder: `drift-hindcast` in the feasibility-studies repository. Tables in this report are generated from the CSV files in `results/` by `scripts/s11_build_report.py` (kilometre values as in the CSV files, up to 5 significant digits; fractions shown as percent). Figures are in `figures/`. OpenDrift 1.14.12. This spike builds nothing for production. It produces evidence for a go / no-go decision.
 
 ## 1. Result in brief
 

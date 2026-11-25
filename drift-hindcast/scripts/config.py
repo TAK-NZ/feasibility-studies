@@ -1,4 +1,4 @@
-"""Constants for the NZ drift hindcast spike. All tunable numbers live here."""
+"""Constants for the NZ drift hindcast study. All tunable numbers live here."""
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent

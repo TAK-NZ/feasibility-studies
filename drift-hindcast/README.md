@@ -1,4 +1,4 @@
-# Drift hindcast spike
+# Drift hindcast
 
 Goal: decide whether an OpenDrift-based ocean drift / search-area service for New Zealand SAR, built only on free forcing data, is worth building, by hindcasting against NOAA GDP drifter tracks.
 

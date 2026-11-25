@@ -634,7 +634,7 @@ def write_md(P, T, S, TS, V, A, Rl, ch):
     pd_ = pd.concat([lv, dv])
     n_sig = int(((pd_.med24_minus_chosen_lo > 0) | (pd_.med24_minus_chosen_hi < 0)).sum())
     A_("### If the model does not clearly beat the baseline: what would need to change\n")
-    A_("The numbers below are what the data show. The remedies are inferences from them, not things this spike tested.\n")
+    A_("The numbers below are what the data show. The remedies are inferences from them, not things this study tested.\n")
     A_(f"- **Size of the gap.** A 30% reduction would need a pooled 24 h median of {need:.2f} km. The model gives {head.model_median_km:.2f} km, so it is {head.model_median_km - need:.2f} km short "
        f"(the median error would have to fall by a further {pct(1 - need / head.model_median_km, 0)}).")
     A_(f"- **Forcing choices do not close it.** Across the 18 lost-class variants (currents with and without tide, 6-hourly and hourly, GFS, ECMWF or the mean of both, Stokes drift on or off) with windage tuned on the tuning set, the "
@@ -649,7 +649,7 @@ def write_md(P, T, S, TS, V, A, Rl, ch):
        f"{fl.rmse_vec:.2f} m/s (lost) and {fd.rmse_vec:.2f} m/s (drogued), against observed mean speeds of {fl.speed_obs:.2f} and {fd.speed_obs:.2f} m/s, with vector correlation {fl.vector_corr:.2f} and {fd.vector_corr:.2f} (`results/forcing_check.csv`, test set).")
     A_("- **What the evidence points to.** (i) Better current forcing is the lever: higher-resolution or regional ocean forcing (the brief's example), or a different or additional ocean model for eddy and boundary-current fields. "
        "(ii) Anything that anchors the cloud to an observed drift, such as a datum marker buoy or a drifter report, would address the persistence-type error that B3 exposes. "
-       "(iii) A hindcast with archived forecasts instead of analysis currents would show how much of this is lost live; it can only get worse than the numbers here. None of these was tested in this spike, and (i) in particular is untested: "
+       "(iii) A hindcast with archived forecasts instead of analysis currents would show how much of this is lost live; it can only get worse than the numbers here. None of these was tested in this study, and (i) in particular is untested: "
        "the data show the 1/12 degree analysis is not enough for the 30% target at 24 h, not that a finer product would be.")
     A_(f"- **The baseline is not equally strong for both classes.** For drogued drifters B1 is no better than leaving the datum where it is (B0 median {g('offshore', 'drogued', 24, 'err_med_B0'):.2f} km vs B1 {g('offshore', 'drogued', 24, 'err_med_B1'):.2f} km at 24 h), "
        f"so the 30% line is against a weak reference there and the model still falls short ({pct(drog.value)}). Against B0 (no calculation at all) the pooled reduction is {pct(g('offshore', 'all', 24, 'impr_B0_model_ens'))} "
