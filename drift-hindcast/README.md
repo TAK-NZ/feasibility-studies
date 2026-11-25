@@ -84,3 +84,9 @@ for s in scripts/s01_gdp_download.py scripts/s02_windows_stepzero.py scripts/s03
 .venv/bin/python scripts/s08_run_ensemble.py --part test --workers 7
 .venv/bin/python scripts/s09_metrics.py && .venv/bin/python scripts/s10_plots.py && .venv/bin/python scripts/s11_build_report.py
 ```
+
+## Data attribution
+The raw downloads are not in this repository. The tables and figures in `results/` and `figures/` are derived from them.
+- Generated using E.U. Copernicus Marine Service Information. Product: GLOBAL_ANALYSISFORECAST_PHY_001_024, https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/description
+- Drifter tracks: NOAA AOML Global Drifter Program, 6-hourly quality-controlled data, https://doi.org/10.25921/7ntx-z961
+- Winds: NOAA GFS 0.25 degree (NOAA, via the AWS Open Data bucket noaa-gfs-bdp-pds), and ECMWF IFS open data (CC-BY-4.0, via the AWS bucket ecmwf-forecasts). Contains ECMWF open data.
