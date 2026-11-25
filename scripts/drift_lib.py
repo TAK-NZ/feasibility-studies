@@ -72,31 +72,67 @@ class LandDistance:
 
 
 # ---------------------------------------------------------------- contours
-def hdr_level(sample_xy, p, bw_min_km=3.0, grid_step_km=1.0):
-    """Gaussian KDE of a 2-D sample (km). Returns (kde, level_p, area_km2 at level, pad).
+BW_FLOOR_KM = 3.0
 
-    The p-contour is the density level that encloses fraction p of the sample's own KDE
-    values (highest-density region). Bandwidth = max(Scott factor bandwidth, bw_min_km).
+
+def _kernel_cov(sample_xy, bw_floor_km=BW_FLOOR_KM):
+    """Gaussian kernel covariance: Scott's rule n^(-1/3) x sample covariance (2-D) + floor^2 x identity."""
+    n = sample_xy.shape[1]
+    S = np.cov(sample_xy) if n > 2 else np.zeros((2, 2))
+    return n ** (-1.0 / 3.0) * S + bw_floor_km ** 2 * np.eye(2)
+
+
+def _kern(dx, dy, Hinv):
+    return np.exp(-0.5 * (Hinv[0, 0] * dx * dx + 2 * Hinv[0, 1] * dx * dy + Hinv[1, 1] * dy * dy))
+
+
+def hdr_levels(sample_xy, ps=(0.5, 0.95), bw_floor_km=BW_FLOOR_KM):
+    """Highest-density-region levels of a 2-D particle cloud (km).
+
+    Gaussian KDE with covariance H = n^(-1/3) Cov + floor^2 I. The p-level is the density below which
+    a fraction (1 - p) of the cloud's own leave-one-out KDE values lie, so the p-contour {density >= level}
+    holds about p of the particles. Returns (H, {p: level}) with densities normalised by the number of
+    kernels (the 1/(2 pi sqrt(det H)) factor is dropped, and the same is done in kde_density).
     """
-    from scipy.stats import gaussian_kde
-    xy = np.asarray(sample_xy, float)
-    n = xy.shape[1]
-    kde = gaussian_kde(xy)
-    sd = xy.std(axis=1, ddof=1)
-    scott = n ** (-1.0 / 6.0)
-    bw = np.maximum(scott * sd, bw_min_km)
-    kde.set_bandwidth(bw_method=float(np.mean(bw / np.maximum(sd, 1e-9))))
-    dens = kde(xy)
-    level = np.quantile(dens, 1.0 - p)
-    return kde, level
+    sample_xy = np.asarray(sample_xy, float)
+    n = sample_xy.shape[1]
+    H = _kernel_cov(sample_xy, bw_floor_km)
+    Hinv = np.linalg.inv(H)
+    dx = sample_xy[0][:, None] - sample_xy[0][None, :]
+    dy = sample_xy[1][:, None] - sample_xy[1][None, :]
+    K = _kern(dx, dy, Hinv)
+    loo = (K.sum(1) - 1.0) / (n - 1)
+    return H, {p: float(np.quantile(loo, 1.0 - p)) for p in ps}
 
 
-def hdr_area_km2(kde, level, xy, grid_step_km=1.0, margin_km=30.0):
-    xmin, ymin = xy.min(axis=1) - margin_km
-    xmax, ymax = xy.max(axis=1) + margin_km
-    gx, gy = np.meshgrid(np.arange(xmin, xmax, grid_step_km), np.arange(ymin, ymax, grid_step_km))
-    dens = kde(np.vstack([gx.ravel(), gy.ravel()]))
-    return float((dens >= level).sum() * grid_step_km ** 2)
+def kde_density(sample_xy, pts_xy, H):
+    """KDE value (same normalisation as hdr_levels) of the cloud at points pts_xy (2, m)."""
+    sample_xy = np.asarray(sample_xy, float)
+    pts_xy = np.asarray(pts_xy, float).reshape(2, -1)
+    Hinv = np.linalg.inv(H)
+    dx = pts_xy[0][:, None] - sample_xy[0][None, :]
+    dy = pts_xy[1][:, None] - sample_xy[1][None, :]
+    return _kern(dx, dy, Hinv).mean(1)
+
+
+def hdr_hits(sample_xy, obs_xy, ps=(0.5, 0.95)):
+    """Boolean hit per p: is the observed point inside the p highest-density contour of the cloud?"""
+    H, lev = hdr_levels(sample_xy, ps)
+    d = float(kde_density(sample_xy, np.asarray(obs_xy, float).reshape(2, 1), H)[0])
+    return {p: bool(d >= lev[p]) for p in ps}
+
+
+def hdr_areas(sample_xy, ps=(0.5, 0.95), max_grid=150, pad_sd=3.0):
+    """Areas (km^2) of the p contours on a regular grid of at most max_grid x max_grid cells (step >= 1 km)."""
+    sample_xy = np.asarray(sample_xy, float)
+    H, lev = hdr_levels(sample_xy, ps)
+    pad = pad_sd * np.sqrt(np.diag(H)) + 0.0
+    lo = sample_xy.min(1) - pad
+    hi = sample_xy.max(1) + pad
+    step = max(1.0, float(np.max(hi - lo)) / max_grid)
+    gx, gy = np.meshgrid(np.arange(lo[0], hi[0], step), np.arange(lo[1], hi[1], step))
+    dens = kde_density(sample_xy, np.vstack([gx.ravel(), gy.ravel()]), H)
+    return {p: float((dens >= lev[p]).sum() * step * step) for p in ps}
 
 
 # ---------------------------------------------------------------- bootstrap
@@ -125,14 +161,23 @@ def _selftest():
     # (a) geodesic: one degree of latitude on the meridian is about 111.2 km at -40
     d = float(geod_km(175.0, -40.0, 175.0, -39.0))
     check("geod one degree latitude", abs(d - 111.0) < 1.0, f"{d:.2f} km")
-    # (b) HDR contours on a Gaussian
+    # (b) HDR contours on a Gaussian: fresh draws must fall inside with the nominal fraction, for n = 300 and 5000
     rng = np.random.default_rng(1)
-    s = rng.normal(0, 20, size=(2, 5000))
-    fresh = rng.normal(0, 20, size=(2, 20000))
-    for p, tol in ((0.95, 0.02), (0.5, 0.03)):
-        kde, lev = hdr_level(s, p)
-        hit = float((kde(fresh) >= lev).mean())
-        check(f"HDR {int(p * 100)} percent hit", abs(hit - p) < tol, f"{hit:.3f}")
+    for n in (300, 5000):
+        hits = {0.5: [], 0.95: []}
+        for _ in range(200 if n == 300 else 10):
+            s = rng.normal(0, 20, size=(2, n))
+            H, lev = hdr_levels(s)
+            fresh = rng.normal(0, 20, size=(2, 400))
+            dd = kde_density(s, fresh, H)
+            for p in hits:
+                hits[p].append((dd >= lev[p]).mean())
+        for p, tol in ((0.95, 0.02), (0.5, 0.03)):
+            h = float(np.mean(hits[p]))
+            check(f"HDR {int(p * 100)} percent hit, n={n}", abs(h - p) < tol, f"{h:.3f}")
+    a = hdr_areas(rng.normal(0, 20, size=(2, 2000)))
+    check("HDR 95 percent area close to the Gaussian value", abs(a[0.95] / (np.pi * 5.991 * 400) - 1) < 0.1, f"{a[0.95]:.0f} km2")
+    check("HDR of a point cloud does not fail", hdr_hits(np.zeros((2, 50)), [0.0, 0.0])[0.95])
     # (c) cluster bootstrap wider than naive on clustered data
     rng = np.random.default_rng(2)
     cl = np.repeat(np.arange(30), 40)

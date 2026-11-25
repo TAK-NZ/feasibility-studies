@@ -1,0 +1,4 @@
+seed 20240213T00: 19 drogued drifters, 1 run: first 5.62 s, second 1.17 s
+reused vs fresh readers: max position difference 0.00e+00 deg (lon), 0.00e+00 (lat)
+6 h displacement, model / (velocity at datum x 6 h): median 0.98, correlation 0.796 (n=19)
+one run with 19x6 elements: 1.75 s

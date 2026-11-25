@@ -63,3 +63,27 @@ GFS_BASE = "https://noaa-gfs-bdp-pds.s3.amazonaws.com"
 ECMWF_BASE = "https://ecmwf-forecasts.s3.amazonaws.com"
 ECMWF_PREFIXES = ["ifs/0p25", "0p25", "ifs/0p4-beta", "0p4-beta"]
 WIND_WORKERS = 4
+
+# --- simulation (steps s05 to s08) ---
+FORCING_DIR = DATA / "forcing"
+RUNS_DIR = DATA / "runs"
+TIME_STEP_S = 900
+OUTPUT_STEP_H = 6
+LEAD_IDX = {6: 1, 12: 2, 24: 4, 48: 8}          # index of each lead in the 6-hourly output
+WINDAGE_GRID = [0.0, 0.005, 0.01, 0.015, 0.02, 0.03]   # extended by s07 if the optimum sits at an edge
+LOST_CURRENTS = ["cur_tide", "cur_notide", "cur_6h_surf"]
+DROGUED_CURRENTS = ["cur_tide", "cur_notide", "cur_6h_surf", "cur_6h_15m", "cur_6h_15m_tide"]
+WINDS = ["gfs", "ecmwf", "both"]
+STOKES = [True, False]
+SIM_SEED = 1234                  # base random seed of all ensemble runs
+N_PER_DRIFTER_TUNE = 300
+N_PER_DRIFTER_TEST = 500
+# Level 1 (native OpenDrift) uncertainty grid, D8 in work/plan.md
+CUR_UNC_GRID = [0.0, 0.1, 0.3]                 # drift:current_uncertainty (m/s)
+WIND_UNC_GRID = [0.0, 1.5, 3.0]                # drift:wind_uncertainty (m/s), lost class only
+WINDAGE_REL_SIGMA_GRID = [0.0, 0.3]            # relative sigma of per-element windage, lost class only
+CDF_REL_SIGMA_GRID = [0.0, 0.2]                # relative sigma of current_drift_factor, drogued class only
+# Level 2 (post hoc persistent velocity offset, m/s per component)
+SIGMA_B_GRID = [0.0, 0.03, 0.05, 0.075, 0.1, 0.125, 0.15, 0.2, 0.3]
+HIT_TARGET_TUNE = 0.90           # selection margin on the tuning set (pass line is 0.80)
+N_AREA_SUBSAMPLE = 300           # tuning windows used for the area part of the selection rule

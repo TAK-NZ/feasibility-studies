@@ -151,7 +151,11 @@ def fetch_one(model, t0):
         try:
             d = xr.open_dataset(out)
             d.load()
+            ok = ("u10" in d and "v10" in d and d.sizes["time"] == len(C.WIND_FHOURS)
+                  and bool(np.isfinite(d.latitude.values).all() and np.isfinite(d.longitude.values).all()))
             d.close()
+            if not ok:
+                raise OSError("incomplete file")
         except OSError:   # truncated by an earlier crash: fetch again
             out.unlink()
     if out.exists():
