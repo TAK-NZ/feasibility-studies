@@ -1,0 +1,2131 @@
+{
+  "products": [
+    {
+      "datasets": [
+        {
+          "dataset_id": "cmems_mod_glo_wav_anfc_0.083deg_PT3H-i",
+          "dataset_name": "cmems_mod_glo_wav_anfc_0.083deg_PT3H-i_202411",
+          "product_id": "GLOBAL_ANALYSISFORECAST_WAV_001_027",
+          "digital_object_identifier": "10.48670/moi-00017",
+          "versions": [
+            {
+              "label": "202411",
+              "parts": [
+                {
+                  "name": "default",
+                  "services": [
+                    {
+                      "service_name": "original-files",
+                      "service_short_name": "files",
+                      "uri": "https://s3.waw3-1.cloudferro.com/mdl-native-14/native/GLOBAL_ANALYSISFORECAST_WAV_001_027/cmems_mod_glo_wav_anfc_0.083deg_PT3H-i_202411",
+                      "variables": [
+                        {
+                          "short_name": "VCMX",
+                          "standard_name": "sea_surface_wave_maximum_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VHM0",
+                          "standard_name": "sea_surface_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VHM0_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VHM0_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VHM0_WW",
+                          "standard_name": "sea_surface_wind_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VMDR",
+                          "standard_name": "sea_surface_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VMDR_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VMDR_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VMDR_WW",
+                          "standard_name": "sea_surface_wind_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VMXL",
+                          "standard_name": "sea_surface_wave_maximum_crest_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VPED",
+                          "standard_name": "sea_surface_wave_from_direction_at_variance_spectral_density_maximum",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VSDX",
+                          "standard_name": "sea_surface_wave_stokes_drift_x_velocity",
+                          "units": "m s-1",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VSDY",
+                          "standard_name": "sea_surface_wave_stokes_drift_y_velocity",
+                          "units": "m s-1",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTM01_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTM01_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTM01_WW",
+                          "standard_name": "sea_surface_wind_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTM02",
+                          "standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTM10",
+                          "standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTPK",
+                          "standard_name": "sea_surface_wave_period_at_variance_spectral_density_maximum",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        }
+                      ]
+                    },
+                    {
+                      "service_name": "wmts",
+                      "service_short_name": "wmts",
+                      "uri": "https://wmts.marine.copernicus.eu/teroWmts/GLOBAL_ANALYSISFORECAST_WAV_001_027/cmems_mod_glo_wav_anfc_0.083deg_PT3H-i_202411?service=WMTS&request=GetCapabilities",
+                      "variables": [
+                        {
+                          "short_name": "VCMX",
+                          "standard_name": "sea_surface_wave_maximum_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VHM0",
+                          "standard_name": "sea_surface_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VHM0_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VHM0_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VHM0_WW",
+                          "standard_name": "sea_surface_wind_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VMDR",
+                          "standard_name": "sea_surface_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VMDR_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VMDR_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VMDR_WW",
+                          "standard_name": "sea_surface_wind_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VMXL",
+                          "standard_name": "sea_surface_wave_maximum_crest_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VPED",
+                          "standard_name": "sea_surface_wave_from_direction_at_variance_spectral_density_maximum",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VSDX",
+                          "standard_name": "sea_surface_wave_stokes_drift_x_velocity",
+                          "units": "m s-1",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VSDY",
+                          "standard_name": "sea_surface_wave_stokes_drift_y_velocity",
+                          "units": "m s-1",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTM01_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTM01_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTM01_WW",
+                          "standard_name": "sea_surface_wind_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTM02",
+                          "standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTM10",
+                          "standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        },
+                        {
+                          "short_name": "VTPK",
+                          "standard_name": "sea_surface_wave_period_at_variance_spectral_density_maximum",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": []
+                        }
+                      ]
+                    },
+                    {
+                      "service_name": "arco-geo-series",
+                      "service_short_name": "geoseries",
+                      "service_format": "zarr",
+                      "uri": "https://s3.waw3-1.cloudferro.com/mdl-arco-time-015/arco/GLOBAL_ANALYSISFORECAST_WAV_001_027/cmems_mod_glo_wav_anfc_0.083deg_PT3H-i_202411/timeChunked.zarr",
+                      "variables": [
+                        {
+                          "short_name": "VCMX",
+                          "standard_name": "sea_surface_wave_maximum_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VHM0",
+                          "standard_name": "sea_surface_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VHM0_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VHM0_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VHM0_WW",
+                          "standard_name": "sea_surface_wind_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VMDR",
+                          "standard_name": "sea_surface_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VMDR_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VMDR_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VMDR_WW",
+                          "standard_name": "sea_surface_wind_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VMXL",
+                          "standard_name": "sea_surface_wave_maximum_crest_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VPED",
+                          "standard_name": "sea_surface_wave_from_direction_at_variance_spectral_density_maximum",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VSDX",
+                          "standard_name": "sea_surface_wave_stokes_drift_x_velocity",
+                          "units": "m s-1",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VSDY",
+                          "standard_name": "sea_surface_wave_stokes_drift_y_velocity",
+                          "units": "m s-1",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTM01_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTM01_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTM01_WW",
+                          "standard_name": "sea_surface_wind_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTM02",
+                          "standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTM10",
+                          "standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTPK",
+                          "standard_name": "sea_surface_wave_period_at_variance_spectral_density_maximum",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 2048,
+                              "axis": "x"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "service_name": "arco-time-series",
+                      "service_short_name": "timeseries",
+                      "service_format": "zarr",
+                      "uri": "https://s3.waw3-1.cloudferro.com/mdl-arco-geo-015/arco/GLOBAL_ANALYSISFORECAST_WAV_001_027/cmems_mod_glo_wav_anfc_0.083deg_PT3H-i_202411/geoChunked.zarr",
+                      "variables": [
+                        {
+                          "short_name": "VCMX",
+                          "standard_name": "sea_surface_wave_maximum_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VHM0",
+                          "standard_name": "sea_surface_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VHM0_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VHM0_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VHM0_WW",
+                          "standard_name": "sea_surface_wind_wave_significant_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VMDR",
+                          "standard_name": "sea_surface_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VMDR_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VMDR_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VMDR_WW",
+                          "standard_name": "sea_surface_wind_wave_from_direction",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VMXL",
+                          "standard_name": "sea_surface_wave_maximum_crest_height",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VPED",
+                          "standard_name": "sea_surface_wave_from_direction_at_variance_spectral_density_maximum",
+                          "units": "degree",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VSDX",
+                          "standard_name": "sea_surface_wave_stokes_drift_x_velocity",
+                          "units": "m s-1",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VSDY",
+                          "standard_name": "sea_surface_wave_stokes_drift_y_velocity",
+                          "units": "m s-1",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTM01_SW1",
+                          "standard_name": "sea_surface_primary_swell_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTM01_SW2",
+                          "standard_name": "sea_surface_secondary_swell_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTM01_WW",
+                          "standard_name": "sea_surface_wind_wave_mean_period",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTM02",
+                          "standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTM10",
+                          "standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "short_name": "VTPK",
+                          "standard_name": "sea_surface_wave_period_at_variance_spectral_density_maximum",
+                          "units": "s",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666663,
+                            90.0
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "time",
+                              "coordinate_unit": "milliseconds since 1970-01-01 00:00:00Z (no leap seconds)",
+                              "minimum_value": 1667271600000.0,
+                              "maximum_value": 1796342400000.0,
+                              "step": 10800000.0,
+                              "chunking_length": 1184,
+                              "axis": "t"
+                            },
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 90.0,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 16,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666663,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 32,
+                              "axis": "x"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "released_date": "2024-11-26T13:00:00.000Z",
+                  "arco_updated_date": "2026-11-24T23:30:31.438Z",
+                  "url_metadata": "https://s3.waw3-1.cloudferro.com/mdl-metadata/metadata/GLOBAL_ANALYSISFORECAST_WAV_001_027/cmems_mod_glo_wav_anfc_0.083deg_PT3H-i_202411/dataset.stac.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dataset_id": "cmems_mod_wav_anfc_0.083deg_static",
+          "dataset_name": "cmems_mod_wav_anfc_0.083deg_static",
+          "product_id": "GLOBAL_ANALYSISFORECAST_WAV_001_027",
+          "digital_object_identifier": "10.48670/moi-00017",
+          "versions": [
+            {
+              "label": "202211",
+              "parts": [
+                {
+                  "name": "bathy",
+                  "services": [
+                    {
+                      "service_name": "original-files",
+                      "service_short_name": "files",
+                      "uri": "https://s3.waw3-1.cloudferro.com/mdl-native-14/native/GLOBAL_ANALYSISFORECAST_WAV_001_027/cmems_mod_wav_anfc_0.083deg_static_202211/GLO-MFC_001_027_bathy.nc",
+                      "variables": [
+                        {
+                          "short_name": "deptho",
+                          "standard_name": "sea_floor_depth_below_geoid",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666666,
+                            89.99999999999999
+                          ],
+                          "coordinates": []
+                        }
+                      ]
+                    },
+                    {
+                      "service_name": "wmts",
+                      "service_short_name": "wmts",
+                      "uri": "https://wmts.marine.copernicus.eu/teroWmts/GLOBAL_ANALYSISFORECAST_WAV_001_027/cmems_mod_wav_anfc_0.083deg_static_202211--ext--bathy?service=WMTS&request=GetCapabilities",
+                      "variables": [
+                        {
+                          "short_name": "deptho",
+                          "standard_name": "sea_floor_depth_below_geoid",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666666,
+                            89.99999999999999
+                          ],
+                          "coordinates": []
+                        }
+                      ]
+                    },
+                    {
+                      "service_name": "static-arco",
+                      "service_short_name": "static-arco",
+                      "service_format": "zarr",
+                      "uri": "https://s3.waw3-1.cloudferro.com/mdl-arco-time-015/arco/GLOBAL_ANALYSISFORECAST_WAV_001_027/cmems_mod_wav_anfc_0.083deg_static_202211--ext--bathy/static.zarr",
+                      "variables": [
+                        {
+                          "short_name": "deptho",
+                          "standard_name": "sea_floor_depth_below_geoid",
+                          "units": "m",
+                          "bbox": [
+                            -180.0,
+                            -80.0,
+                            179.91666666666666,
+                            89.99999999999999
+                          ],
+                          "coordinates": [
+                            {
+                              "coordinate_id": "latitude",
+                              "coordinate_unit": "degrees_north",
+                              "minimum_value": -80.0,
+                              "maximum_value": 89.99999999999999,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 512,
+                              "axis": "y"
+                            },
+                            {
+                              "coordinate_id": "longitude",
+                              "coordinate_unit": "degrees_east",
+                              "minimum_value": -180.0,
+                              "maximum_value": 179.91666666666666,
+                              "step": 0.08333333333333333,
+                              "chunking_length": 1024,
+                              "axis": "x"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "url_metadata": "https://s3.waw3-1.cloudferro.com/mdl-metadata/metadata/GLOBAL_ANALYSISFORECAST_WAV_001_027/cmems_mod_wav_anfc_0.083deg_static_202211--ext--bathy/dataset.stac.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

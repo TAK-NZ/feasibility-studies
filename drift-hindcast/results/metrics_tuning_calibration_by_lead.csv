@@ -1,0 +1,17 @@
+cls,l1,sigma_b,lead_h,n_windows,hit50,hit95,mean_area50_km2,mean_area95_km2,n_area,setting
+lost,cu0.0_wu3.0_rw0.0,0.125,6,975,0.39897,0.83897,,,0,chosen
+lost,cu0.0_wu3.0_rw0.0,0.125,12,975,0.47692,0.89333,,,0,chosen
+lost,cu0.0_wu3.0_rw0.0,0.125,24,975,0.58051,0.92,516.62,2219.9,244,chosen
+lost,cu0.0_wu3.0_rw0.0,0.125,48,975,0.63897,0.94051,,,0,chosen
+lost,cu0.3_wu0.0_rw0.3,0,6,975,0.13641,0.41846,,,0,native_only_best
+lost,cu0.3_wu0.0_rw0.3,0,12,975,0.093333,0.31692,,,0,native_only_best
+lost,cu0.3_wu0.0_rw0.3,0,24,975,0.061538,0.22769,33.975,146.86,244,native_only_best
+lost,cu0.3_wu0.0_rw0.3,0,48,975,0.037949,0.16513,,,0,native_only_best
+drogued,cu0.0_rc0.0,0.1,6,528,0.3447,0.79356,,,0,chosen
+drogued,cu0.0_rc0.0,0.1,12,528,0.48106,0.87879,,,0,chosen
+drogued,cu0.0_rc0.0,0.1,24,528,0.54545,0.9072,330.41,1430,264,chosen
+drogued,cu0.0_rc0.0,0.1,48,528,0.59091,0.92235,,,0,chosen
+drogued,cu0.3_rc0.2,0,6,528,0.19697,0.57008,,,0,native_only_best
+drogued,cu0.3_rc0.2,0,12,528,0.16667,0.52083,,,0,native_only_best
+drogued,cu0.3_rc0.2,0,24,528,0.10985,0.38447,45.057,217.94,264,native_only_best
+drogued,cu0.3_rc0.2,0,48,528,0.083333,0.30682,,,0,native_only_best

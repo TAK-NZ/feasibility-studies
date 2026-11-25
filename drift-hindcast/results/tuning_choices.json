@@ -1,0 +1,143 @@
+{
+  "tuning_set": {
+    "lost": {
+      "windows": 985,
+      "drifters": 33
+    },
+    "drogued": {
+      "windows": 528,
+      "drifters": 29
+    },
+    "lost_common_wind_windows": 975
+  },
+  "choices": {
+    "lost": {
+      "current": "cur_tide",
+      "wind": "ecmwf",
+      "stokes": false,
+      "windage": 0.005,
+      "med24_tuning": 11.19118406257047,
+      "med48_tuning": 20.958554934830342,
+      "n_tied": 9
+    },
+    "drogued": {
+      "current": "cur_notide",
+      "med24_tuning": 9.378252659981747,
+      "med48_tuning": 17.34933678590074,
+      "n_tied": 5
+    }
+  },
+  "notes": [],
+  "baseline": {
+    "lost": {
+      "wind": "ecmwf",
+      "windage": 0.005,
+      "a50_km_per_h": 0.5820644614696746,
+      "a95_km_per_h": 1.4056451800417127,
+      "med24_B1_tuning": 13.96954707527219,
+      "med24_B0_tuning": 15.830749185067162,
+      "med24_B3_tuning": 8.977627973841035
+    },
+    "drogued": {
+      "wind": "none",
+      "windage": 0.0,
+      "a50_km_per_h": 0.53831788630903,
+      "a95_km_per_h": 1.2361148395428818,
+      "med24_B1_tuning": 12.908959730822458,
+      "med24_B0_tuning": 12.254721101834672,
+      "med24_B3_tuning": 5.442431678991267
+    }
+  },
+  "tuning_skill": {
+    "lost": {
+      "6": {
+        "model": 3.7682383747215735,
+        "B1": 3.9092887964506007,
+        "improvement": 0.036080839526896114
+      },
+      "12": {
+        "model": 6.44489189173096,
+        "B1": 7.319239017138696,
+        "improvement": 0.11945874746819563
+      },
+      "24": {
+        "model": 11.19118406257047,
+        "B1": 13.96954707527219,
+        "improvement": 0.19888712194683567
+      },
+      "48": {
+        "model": 20.958554934830342,
+        "B1": 29.143766415096547,
+        "improvement": 0.28085633694985435
+      }
+    },
+    "drogued": {
+      "6": {
+        "model": 3.336005404024803,
+        "B1": 3.5209106576434155,
+        "improvement": 0.052516315123534385
+      },
+      "12": {
+        "model": 5.222281330867251,
+        "B1": 6.732654391321647,
+        "improvement": 0.22433545117082776
+      },
+      "24": {
+        "model": 9.378252659981747,
+        "B1": 12.908959730822458,
+        "improvement": 0.2735082566266369
+      },
+      "48": {
+        "model": 17.34933678590074,
+        "B1": 25.391864168523785,
+        "improvement": 0.31673638962643436
+      }
+    }
+  },
+  "uncertainty": {
+    "lost": {
+      "rule": "smallest area with hit95 >= target",
+      "l1": {
+        "id": "cu0.0_wu3.0_rw0.0",
+        "cur_unc": 0.0,
+        "wind_unc": 3.0,
+        "rel_windage": 0.0,
+        "rel_cdf": 0.0
+      },
+      "sigma_b": 0.125,
+      "tuning_hit50_24h": 0.5805128205128205,
+      "tuning_hit95_24h": 0.92,
+      "tuning_area95_24h_km2": 2219.8893442622953,
+      "tuning_area50_24h_km2": 516.6188524590164,
+      "n_windows": 975,
+      "native_only_best": {
+        "l1": "cu0.3_wu0.0_rw0.3",
+        "hit50": 0.06153846153846154,
+        "hit95": 0.2276923076923077,
+        "area95": 146.86475409836066
+      }
+    },
+    "drogued": {
+      "rule": "smallest area with hit95 >= target",
+      "l1": {
+        "id": "cu0.0_rc0.0",
+        "cur_unc": 0.0,
+        "wind_unc": 0.0,
+        "rel_windage": 0.0,
+        "rel_cdf": 0.0
+      },
+      "sigma_b": 0.1,
+      "tuning_hit50_24h": 0.5454545454545454,
+      "tuning_hit95_24h": 0.9071969696969697,
+      "tuning_area95_24h_km2": 1430.0227272727273,
+      "tuning_area50_24h_km2": 330.4128787878788,
+      "n_windows": 528,
+      "native_only_best": {
+        "l1": "cu0.3_rc0.2",
+        "hit50": 0.10984848484848485,
+        "hit95": 0.38446969696969696,
+        "area95": 217.93560606060606
+      }
+    }
+  }
+}
