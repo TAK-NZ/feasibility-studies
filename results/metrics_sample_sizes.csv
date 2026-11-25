@@ -1,0 +1,43 @@
+set,stratum_type,stratum,drogue_class,n_windows,n_drifters,n_blocks,n_seed_dates,mean_windows_per_drifter,icc_24h_error,n_eff,anecdotal
+test,headline,offshore,all,2415,75,72,143,32.2,0.09812,594.63,False
+test,headline,offshore,lost,1447,49,72,142,29.531,0.07422,464.15,False
+test,headline,offshore,drogued,968,43,66,131,22.512,0.15634,221.86,False
+test,zone,offshore,all,2415,75,72,143,32.2,0.09812,594.63,False
+test,zone,offshore,lost,1447,49,72,142,29.531,0.07422,464.15,False
+test,zone,offshore,drogued,968,43,66,131,22.512,0.15634,221.86,False
+test,zone,mid,all,71,23,36,60,3.087,0.12165,56.624,False
+test,zone,mid,lost,50,17,26,42,2.9412,0.080985,43.208,False
+test,zone,mid,drogued,21,6,12,20,3.5,0,21,True
+test,zone,coastal,all,18,8,10,17,2.25,0.41774,11.825,True
+test,zone,coastal,lost,15,6,8,14,2.5,0.43948,9.0404,True
+test,zone,coastal,drogued,3,2,3,3,1.5,0,3,True
+test,season,DJF,all,653,58,21,40,11.259,0.14108,266.82,False
+test,season,DJF,lost,365,35,21,40,10.429,0.064216,227.35,False
+test,season,DJF,drogued,288,31,21,40,9.2903,0.20874,105.47,False
+test,season,JJA,all,465,55,14,26,8.4545,0.18289,196.75,False
+test,season,JJA,lost,299,37,14,26,8.0811,0.21193,119.57,False
+test,season,JJA,drogued,166,23,14,26,7.2174,0.10075,102.06,False
+test,season,MAM,all,806,62,22,43,13,0.15754,278.84,False
+test,season,MAM,lost,393,36,22,42,10.917,0.16437,149.43,False
+test,season,MAM,drogued,413,35,22,43,11.8,0.17794,141.35,False
+test,season,SON,all,491,44,18,34,11.159,0.12116,220.09,False
+test,season,SON,lost,390,31,18,34,12.581,0.11783,164.94,False
+test,season,SON,drogued,101,17,12,22,5.9412,0.14247,59.273,False
+test,wind_class,5-10,all,1476,72,72,143,20.5,0.07339,607.13,False
+test,wind_class,5-10,lost,863,48,72,141,17.979,0.05349,452.25,False
+test,wind_class,5-10,drogued,613,40,64,122,15.325,0.12917,215.06,False
+test,wind_class,<5,all,400,59,67,111,6.7797,0.14879,215.06,False
+test,wind_class,<5,lost,242,41,63,92,5.9024,0.13369,146.19,False
+test,wind_class,<5,drogued,158,28,46,67,5.6429,0.16456,89.568,False
+test,wind_class,>=10,all,539,70,67,119,7.7,0.27366,190.22,False
+test,wind_class,>=10,lost,342,45,62,106,7.6,0.22176,138.82,False
+test,wind_class,>=10,drogued,197,38,48,77,5.1842,0.3782,76.283,False
+test,ecmwf_grid,ECMWF 0.25 deg (from 2024-02-01),all,1421,51,37,73,27.863,0.125,326.08,False
+test,ecmwf_grid,ECMWF 0.25 deg (from 2024-02-01),lost,748,32,37,73,23.375,0.10404,224.76,False
+test,ecmwf_grid,ECMWF 0.25 deg (from 2024-02-01),drogued,673,29,37,73,23.207,0.18407,132.28,False
+test,ecmwf_grid,ECMWF 0.4 deg (before 2024-02-01),all,994,46,35,70,21.609,0.11534,294.34,False
+test,ecmwf_grid,ECMWF 0.4 deg (before 2024-02-01),lost,699,26,35,69,26.885,0.10468,188.43,False
+test,ecmwf_grid,ECMWF 0.4 deg (before 2024-02-01),drogued,295,26,29,58,11.346,0.13848,121.26,False
+tuning_in_sample,headline,offshore,all,1503,50,72,143,30.06,0.11151,354.45,False
+tuning_in_sample,headline,offshore,lost,975,33,72,142,29.545,0.083072,289.2,False
+tuning_in_sample,headline,offshore,drogued,528,29,63,125,18.207,0.25423,98.242,False

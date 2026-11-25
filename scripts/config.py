@@ -87,3 +87,12 @@ CDF_REL_SIGMA_GRID = [0.0, 0.2]                # relative sigma of current_drift
 SIGMA_B_GRID = [0.0, 0.03, 0.05, 0.075, 0.1, 0.125, 0.15, 0.2, 0.3]
 HIT_TARGET_TUNE = 0.90           # selection margin on the tuning set (pass line is 0.80)
 N_AREA_SUBSAMPLE = 300           # tuning windows used for the area part of the selection rule
+# --- metrics and pass criteria (s09, s10) ---
+BOOT_B = 2000                     # cluster bootstrap replicates (clusters = drifters; sensitivity: clusters = 96 h blocks)
+BOOT_SEED = 42
+PASS_IMPROVEMENT = 0.30           # offshore 24 h median error must be at least this much below the hand-calculation baseline
+BORDER_IMPROVEMENT = 0.25         # "about 30 percent": 25 to <30 is BORDERLINE
+PASS_HIT95 = 0.80                 # 95 percent contour must hold at least this fraction of observed endpoints
+BORDER_HIT95 = 0.75
+RELIABILITY_PS = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 0.99]
+FIG_DPI = 110                     # figures are at most 2000 x 1400 px

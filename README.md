@@ -46,3 +46,20 @@ export MPLCONFIGDIR=$PWD/data/mplconfig
 `s07` rewrites `results/tuning_choices.json`, so it must run before `tune-eval` and `test`. Random seeds are fixed (`scripts/config.py`: `SIM_SEED`), and a repeat of `s07` plus `tune-eval` gave an identical `tuning_choices.json`.
 Definitions: `work/baseline.md` (hand-calculation baseline), `work/tuning.md` (what was tuned on which data), `work/run_notes.md` (variants run or skipped, counts, problems, raw output locations).
 Large raw output (`data/runs/`, about 260 MB) is git-ignored.
+## Metrics and plots
+Run after the simulation runs, from the project folder. Needs `data/runs/` (raw simulation output) and the committed `results/` files; no downloads and no new OpenDrift runs. About 40 s and 1 minute on the 8-core machine used here.
+```bash
+export MPLCONFIGDIR=$PWD/data/mplconfig
+.venv/bin/python scripts/s09_metrics.py   # metric tables, cluster bootstrap by drifter, reliability, pass criteria -> results/metrics_*.csv, results/reliability_offshore_test.csv, results/pass_criteria.csv, results/pass_criteria.md
+.venv/bin/python scripts/s10_plots.py     # figures/fig1..fig5 (PNG, under 2000 px per side)
+```
+Outputs (test set unless the file name says tuning; numbers in the files are rounded to 5 significant digits):
+- `results/pass_criteria.md` and `.csv`: the agreed criteria as PASS/BORDERLINE/FAIL with numbers, confidence intervals, sample sizes, and what would need to change.
+- `results/metrics_test_by_lead.csv`: median and 90th percentile error by lead (6, 12, 24, 48 h) for the model, Leeway, B0, B1, B3, with reductions against B1 and B0 (offshore: all, lost, drogued).
+- `results/metrics_test_contours_by_lead.csv`: 50% and 95% contour hit rates and areas by lead, model and baseline circle.
+- `results/metrics_test_by_stratum.csv`: the same by zone (offshore, mid, coastal), class, season, wind-speed class and ECMWF grid period; `anecdotal` marks groups under 30 windows or 8 drifters.
+- `results/metrics_test_variants.csv`, `results/metrics_test_all_configs_point.csv`: every forcing variant on the test set.
+- `results/metrics_tuning_insample_by_lead.csv`, `results/metrics_tuning_calibration_by_lead.csv`: tuning-set (in-sample) numbers, kept separate.
+- `results/metrics_sample_sizes.csv`: windows, drifters, 96 h blocks, intra-drifter correlation and effective sample size for every group.
+- `results/reliability_offshore_test.csv`: hit rate against nominal contour level at each lead.
+Intervals are percentile intervals of a cluster bootstrap that resamples whole drifters (2,000 replicates, seed 42); headline numbers are repeated with 96 h blocks as clusters and the wider interval is quoted. Thresholds for PASS/BORDERLINE/FAIL are in `scripts/config.py`.
