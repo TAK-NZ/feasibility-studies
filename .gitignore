@@ -1,0 +1,6 @@
+# Large downloaded data and local environments stay out of git, in every study folder.
+data/
+.venv/
+__pycache__/
+*.nc
+.DS_Store
