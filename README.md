@@ -63,3 +63,24 @@ Outputs (test set unless the file name says tuning; numbers in the files are rou
 - `results/metrics_sample_sizes.csv`: windows, drifters, 96 h blocks, intra-drifter correlation and effective sample size for every group.
 - `results/reliability_offshore_test.csv`: hit rate against nominal contour level at each lead.
 Intervals are percentile intervals of a cluster bootstrap that resamples whole drifters (2,000 replicates, seed 42); headline numbers are repeated with 96 h blocks as clusters and the wider interval is quoted. Thresholds for PASS/BORDERLINE/FAIL are in `scripts/config.py`.
+## Report
+`REPORT.md` is generated from `report/REPORT.template.md` and the CSV files in `results/`; every table in it is rendered by the script, so the numbers match the files. Narrative numbers in the template were typed by hand from the same files.
+```bash
+.venv/bin/python scripts/s11_build_report.py   # writes REPORT.md (about 1 s)
+```
+Results and conclusions are in `REPORT.md`. Figures it embeds are in `figures/`.
+## Whole sequence in one block
+Run from the project folder, after one-off `copernicusmarine login`. About 2.5 hours and about 21 GB of disk on an 8-core machine, mostly the CMEMS download and the simulation runs. Each step is resumable.
+```bash
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/copernicusmarine login --check-credentials-valid
+export MPLCONFIGDIR=$PWD/data/mplconfig
+for s in scripts/s01_gdp_download.py scripts/s02_windows_stepzero.py scripts/s03_cmems_download.py scripts/s04_wind_download.py; do .venv/bin/python $s || break; done
+.venv/bin/python scripts/s05_build_forcing.py --workers 4
+.venv/bin/python scripts/s06_run_deterministic.py --workers 7
+.venv/bin/python scripts/s07_tune.py
+.venv/bin/python scripts/s08_run_ensemble.py --part tune-runs --workers 7
+.venv/bin/python scripts/s08_run_ensemble.py --part tune-eval --workers 7
+.venv/bin/python scripts/s08_run_ensemble.py --part test --workers 7
+.venv/bin/python scripts/s09_metrics.py && .venv/bin/python scripts/s10_plots.py && .venv/bin/python scripts/s11_build_report.py
+```
